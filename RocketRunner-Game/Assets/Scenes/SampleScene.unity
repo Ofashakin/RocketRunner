@@ -234,8 +234,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3247e2a8540520841a6ace1c166119db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketPos: []
-  currPosIndex: 1
+  rocketPos:
+  - {x: -15, y: -5, z: 0}
+  - {x: -15, y: 0, z: 0}
+  - {x: -15, y: 5, z: 0}
+  currPosIndex: 2
   t: 0
   moveSpeed: 7
 --- !u!212 &1261272596

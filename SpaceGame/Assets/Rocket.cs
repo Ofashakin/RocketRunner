@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Rocket : MonoBehaviour
 {
@@ -70,7 +71,7 @@ public class Rocket : MonoBehaviour
         else if(ft > flinchDur)
         {
             ft = 0;
-            isFlinching = false
+            isFlinching = false;
         }
 
         t = Time.deltaTime * moveSpeed;

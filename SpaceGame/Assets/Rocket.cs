@@ -65,8 +65,8 @@ public class Rocket : MonoBehaviour
     {
         if(isFlinching && ft <= flinchDur)
         {
-            ft + Time.deltaTime;
-            s.Color = flinchColor.Lerp(Color.white, flinchColor, Mathf.PingPong(ft, 0.5f));
+            ft += Time.deltaTime;
+            s.color = Color.Lerp(Color.white, flinchColor, Mathf.PingPong(ft, 0.5f));
         }
         else if(ft > flinchDur)
         {

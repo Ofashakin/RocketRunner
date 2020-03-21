@@ -9,16 +9,20 @@ public class AsteroidSpawner : MonoBehaviour
     public float spawnInterval = 1;
     public float timer;
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        if( timer >= spawnInterval)
+        if (timer >= spawnInterval)
         {
             // Generates a random index to remove from our wave
             int e = Random.Range(0, spawnPos.Length);
             List<GameObject> wave = new List<GameObject>();
-            for(int i = 0; i < spawnPos.Length; i++)
+            for (int i = 0; i < spawnPos.Length; i++)
             {
                 GameObject asteroid = Instantiate<GameObject>(asteroidPrefab, spawnPos[i], Quaternion.identity);
                 asteroid.name = "Asteroid";
@@ -33,7 +37,7 @@ public class AsteroidSpawner : MonoBehaviour
             timer = 0;
 
             // Varies the spawn interval between 1.5 seonds and 2 seconds
-            spawnInterval = Random.Range(1.5f, 2f);
+            spawnInterval = Random.Range(1.5f, 3f);
         }
     }
 }

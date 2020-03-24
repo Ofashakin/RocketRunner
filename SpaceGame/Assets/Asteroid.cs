@@ -15,9 +15,5 @@ public class Asteroid : MonoBehaviour
                                             transform.position.z);
 
         // Destroys asteroid if it goes too far off screen
-        if (transform.position.x < -30)
-        {
-            Destroy(gameObject);
-        }
     }
 }

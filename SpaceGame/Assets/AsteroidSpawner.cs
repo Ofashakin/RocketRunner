@@ -28,6 +28,7 @@ public class AsteroidSpawner : MonoBehaviour
                 asteroid.name = "Asteroid";
                 wave.Add(asteroid);
             }
+            Debug.Log(wave.Count);
             // Gets asteroid that needs to be removed and makes it invisible
             wave[e].GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
             // Changes the name of gameObject for collision code

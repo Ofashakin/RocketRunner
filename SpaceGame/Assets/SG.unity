@@ -196,7 +196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125440518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.59, y: -0.82, z: 0}
+  m_LocalPosition: {x: 7, y: -0.7, z: 0}
   m_LocalScale: {x: 0.53, y: 0.473, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -532,6 +532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449603088}
+  - component: {fileID: 1449603089}
   m_Layer: 0
   m_Name: AsteroidSpawner
   m_TagString: Untagged
@@ -553,6 +554,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1449603089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449603087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a28312133ebde94abd15c1dab1baf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefab: {fileID: 4125770523427204251, guid: c8dd866a488a5b44f853675cba18ee74,
+    type: 3}
+  spawnPos:
+  - {x: 30, y: 10, z: 0}
+  - {x: 30, y: 0, z: 0}
+  - {x: 30, y: -10, z: 0}
+  spawnInterval: 1
+  timer: 0
 --- !u!1 &1665030785
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,10 +986,9 @@ MonoBehaviour:
   currPosIndex: 1
   t: 0
   moveSpeed: 7
-  audioSource: {fileID: 0}
   hurt: {fileID: 8300000, guid: 43c883d38db41aa408dfdbfdf5575e9e, type: 3}
   pts: {fileID: 8300000, guid: db8f35424d7e63c41a4b271637527ee5, type: 3}
-  die: {fileID: 8300000, guid: 2ec7dd13c8a4309409a604c9093274e2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &1902274852
 GameObject:
   m_ObjectHideFlags: 0
